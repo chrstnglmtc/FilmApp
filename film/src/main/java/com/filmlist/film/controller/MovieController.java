@@ -22,7 +22,7 @@ public class MovieController {
     @Autowired
     private MovieService movieService;
 
-    @GetMapping("/user/{userId}")
+    @GetMapping("/users/{userId}")
     public List<Movie> getMoviesByUserId(@PathVariable Long userId) {
         return movieService.getMoviesByUserId(userId);
     }

@@ -19,4 +19,8 @@ public class UserService {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userDao.save(user);
     }
+
+    public void login(User user) {
+        
+    }
 }
